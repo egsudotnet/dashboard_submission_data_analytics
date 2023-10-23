@@ -201,7 +201,7 @@ plt.suptitle("Number of Order and Revenue", fontsize=20)
 st.pyplot(plt)
 
 # Product performance
-st.subheader("Best & Worst Performing Product") 
+st.subheader("Best & Worst Performing Product Category") 
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(24, 6))
  
 sns.barplot(x="order_product_count", y="product_category_name", data=total_orders_product_df.head(5), palette=colors,hue="product_category_name", ax=ax[0])
